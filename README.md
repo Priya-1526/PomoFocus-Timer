@@ -18,7 +18,8 @@ This version is converted from Electron to pure HTML/CSS/JS, making it lightweig
 
 📦 No installation needed — runs in any modern browser
 
-🔗Live Demo : 👉 
+🔗Live Demo : 👉 [click here for live demo](https://Priya-1526.github.io/PomoFocus-Timer/)
+
 
 📁 Project Structure
 
