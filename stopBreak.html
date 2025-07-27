@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Pomofocus!</title>
+</head>
+
+<body>
+  <!-- stopBreak.html -->
+  <div class="stopBreakDiv">
+    <audio src="./assets/clock_alarm.wav" autoplay style="display: none"></audio>
+    <h1>BACK TO WORK!</h1>
+    <p id="task"></p>
+    <p id="time-remaining">00:00</p>
+
+    <div class="nav-buttons">
+      <button id="new-task-btn">Set New Task</button>
+      <button id="exit-btn">Exit</button>
+    </div>
+  </div>
+
+  <script>
+    const taskValue = localStorage.getItem("taskValue") || "No task available";
+    const displayTask = document.getElementById("task");
+
+    if (displayTask) {
+      displayTask.textContent = taskValue;
+    }
+
+    document.getElementById("new-task-btn").addEventListener("click", () => {
+      window.location.href = "setTask.html"; // ✅ Normal browser navigation
+    });
+
+    document.getElementById("exit-btn").addEventListener("click", () => {
+      // window.close() will not work unless opened by JS
+      alert("Thanks for using Pomofocus! You can close the tab now.");
+      window.location.href = "index.html"; // optional fallback
+    });
+  </script>
+
+</body>
+
+</html>

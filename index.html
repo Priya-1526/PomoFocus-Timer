@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pomofocus!</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <h1>POMOFOCUS</h1>
+      <p>Study smarter with this pomofocus timer!</p>
+      <img src="./assets/pomoMenu.png" alt="Pomodoro Menu" />
+      <button id="start-btn">START</button>
+    </div>
+
+    <script>
+      document.getElementById("start-btn").addEventListener("click", () => {
+        window.location.href = "setTask.html"; // Regular web navigation
+      });
+    </script>
+  </body>
+</html>
